@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +69,56 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+<!--breadcrumb area-->
+<section class="breadcrumb-area gradient-overlay" style="background: url('{{asset('images/banner/3.jpg')}}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="site-breadcrumb">
+                    <h2>Login Account</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/breadcrumb area-->
+
+<!--Login Section -->
+<section class="section-padding blue-bg shaded-bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 centered">
+                <div class="section-title cl-white">
+                    <h4><span>New</span>Login account</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+                <div class="site-form mb-30">
+                    <form action="{{route('login')}}" method="POST">
+                        @csrf
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-sm-12">
+                                <input type="email" placeholder="Email" name="email" required>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-sm-12">
+                                <input type="password" placeholder="Password" name="password" required>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-sm-12">
+                                <button type="submit" class="bttn-mid btn-fill w-100">Login Account</button>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-sm-12">
+                                <div class="extra-links">
+                                    <a href="{{route('register')}}" class="cl-white">Create new account</a>
+                                    <a href="forget-password.html" class="cl-white">Forget Password?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/Login Section-->
 @endsection

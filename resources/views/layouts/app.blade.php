@@ -22,10 +22,10 @@
 
 </head>
 <body>
-    <div id="app">
-        <main class="py-4">
-
             <!-- Preloader -->
+        <div class="preloader">
+            <div class="lds-roller"></div>
+        </div><!--/Preloader -->
             <!--Header Area-->
         <header class="header-area blue-bg-2">
             <nav class="navbar navbar-expand-lg main-menu">
@@ -62,7 +62,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="{{route('dashboard')}}">Dashboard</a></li>
                                     <li><a class="dropdown-item" href="transactions.html">Transactions</a></li>
                                     <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                                     {{-- <li><a class="dropdown-item" href="notification.html">Notifications</a></li>
@@ -108,11 +108,76 @@
                 </div>
             </nav>
         </header><!--/Header Area-->
-
-            <!--/Preloader -->
             @yield('content')
-        </main>
+<!--newslatter-->
+<section class="section-padding blue-bg-2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="call-to-action centered">
+                    <div class="section-title">
+                        <h4><span>Top</span>Stay updated</h4>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-6 col-sm-12">
+                            <div class="newslatter">
+                                <form action="#">
+                                    <input type="email" placeholder="Email Address" required>
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                                <div class="social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section><!--/newslatter-->
+        <!--Footer Area-->
+<footer class="footer-area section-padding-2 blue-bg-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-12">
+                <div class="footer-logo">
+                    <a href="#"><img src="{{asset('images/logo-2.png')}}" alt=""></a>
+                </div>
+            </div>
+            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-12">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Trams and Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-xl-6 col-sm-6">
+                <div class="copyright-text">
+                    <p>Copyright &copy; 2020. All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-6">
+                <div class="social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!--/Footer Area-->
+
     <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
     <script src="{{asset('js/jquery-migrate.js')}}"></script>
     <script src="{{asset('js/jquery-ui.js')}}"></script>
