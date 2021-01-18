@@ -1,9 +1,6 @@
 <?php
 
-<<<<<<< HEAD
 use App\Http\Controllers\Dashboard;
-=======
->>>>>>> 818affe... Initial commit
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,10 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
 Route::get('Dashboard',[Dashboard::class,'index'])->name('dashboard');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-=======
->>>>>>> 818affe... Initial commit
