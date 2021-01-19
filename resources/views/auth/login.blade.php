@@ -100,6 +100,9 @@
                         @csrf
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-sm-12">
+                                @error('email')
+                                    <span style="color: red">Invalid Email Or    Password</span>
+                                @enderror
                                 <input type="email" placeholder="Email" name="email" required>
                             </div>
                             <div class="col-xl-12 col-lg-12 col-sm-12">
