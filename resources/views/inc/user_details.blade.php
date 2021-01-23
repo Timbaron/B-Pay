@@ -7,8 +7,8 @@
                         <img src="assets/images/new-user/1.jpg" alt=""> Profile <a href="profile.html"><i class="ti-arrow-top-right"></i></a>
                     </div>
                     <div class="card-body">
-                        <p>Good Morning! <strong>Clark Mcbride</strong></p>
-                        <p>Customer id: <strong>23658795</strong>; Last login: <strong>12-03-20</strong></p>
+                        <p>Good Morning! <strong>{{$user->first_name. ' '. $user->last_name }}</strong></p>
+                        <p>Account Number: <strong>{{$user->acct_number}}</strong>
                     </div>
                 </div>
             </div>
@@ -18,8 +18,7 @@
                         Balance
                     </div>
                     <div class="card-body">
-                        <p>US Doller: <strong>$568</strong></p>
-                        <p>GB Pound: <strong>£785</strong></p>
+                        <p>NGN : <strong>${{$user->balance}}</strong></p>
                     </div>
                 </div>
             </div>
