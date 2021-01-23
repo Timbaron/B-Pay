@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -49,8 +50,13 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        // dd($data);
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
+            // 'other_name' => ['required', 'string', 'max:255'],
+            // 'username' => ['required', 'string', 'max:255'],
+            'phone_number' => ['required','min:11'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -64,10 +70,26 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        $account_number = rand(123456789,999999999);
+        // dd($account_number);
+        $checker = DB::select('select * from users where acct_number = "$account_number"');
+        if($checker == true){
+            return redirect()->back()->compact('acct_number_error','Error encounted during registration,please try again after 10 Seconds.');
+        }
+        else{
+            $data['acct_number'] = $account_number;
+            // User::create($data);
+
+            return User::create([
+                'first_name' => $data['first_name'],
+                'last_name' => $data['last_name'],
+                'phone_number' => $data['phone_number'],
+                'email' => $data['email'],
+                'acct_number' => $data['acct_number'],
+                'password' => Hash::make($data['password']),
+            ]);
+            dd("Completed");
+        }
+
     }
 }
