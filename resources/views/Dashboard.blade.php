@@ -43,94 +43,19 @@
                             <th scope="col">Description</th>
                             <th scope="col">Amount</th>
                             <th scope="col">Status</th>
-                            <th scope="col">Bank or Card</th>
+                            <th scope="col">Card</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>15 March, 2020</span></td>
-                            <td><strong>Padlock Holdings Bank Corp</strong> <span>- Widthdraw</span></td>
-                            <td><strong>- $589.20</strong></td>
-                            <td><i class="ti-check cl-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Finished"></i></td>
-                            <td><strong class="cl-primary">USD XXXX-2359</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>13 March, 2020</span></td>
-                            <td><strong>Rahul payment</strong> <span>- Refund</span></td>
-                            <td><strong>- $589.9</strong></td>
-                            <td><i class="ti-close cl-red" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cancelled"></i></td>
-                            <td><strong class="cl-primary">USD Bank of Rob</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>12 March, 2020</span></td>
-                            <td><strong>Amazon Payment service</strong> <span>- Send</span></td>
-                            <td><strong>- £239.85</strong></td>
-                            <td><i class="ti-check cl-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Finished"></i></td>
-                            <td><strong class="cl-primary">GBP XXXX-5879</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>10 March, 2020</span></td>
-                            <td><strong>Namecheap Domain Buy</strong><span> - Cost</span></td>
-                            <td><strong>- $13.25</strong></td>
-                            <td><i class="ti-flag-alt cl-yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="Processing"></i></td>
-                            <td><strong class="cl-primary">USD XXXX-2359</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>08 March, 2020</span></td>
-                            <td><strong>Nrvene Builders Ltd</strong><span> - Deposit</span></td>
-                            <td><strong>+ $958.32</strong></td>
-                            <td><i class="ti-check cl-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Finished"></i></td>
-                            <td><strong class="cl-primary">USD XXXX-2359</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>05 March, 2020</span></td>
-                            <td><strong>Ronand Corporation</strong><span> - Widthdraw</span></td>
-                            <td><strong>- $358.15</strong></td>
-                            <td><i class="ti-check cl-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Finished"></i></td>
-                            <td><strong class="cl-primary">USD XXXX-2359</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>01 March, 2020</span></td>
-                            <td><strong>Hexabon Payouts</strong><span> - Deposit</span></td>
-                            <td><strong>- $1,236.02</strong></td>
-                            <td><i class="ti-check cl-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Finished"></i></td>
-                            <td><strong class="cl-primary">USD XXXX-2359</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>15 March, 2020</span></td>
-                            <td><strong>Padlock Holdings Bank Corp</strong> <span>- Widthdraw</span></td>
-                            <td><strong>- $589.20</strong></td>
-                            <td><i class="ti-check cl-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Finished"></i></td>
-                            <td><strong class="cl-primary">USD XXXX-2359</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>13 March, 2020</span></td>
-                            <td><strong>Rahul payment</strong> <span>- Refund</span></td>
-                            <td><strong>- $589.9</strong></td>
-                            <td><i class="ti-close cl-red" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cancelled"></i></td>
-                            <td><strong class="cl-primary">USD Bank of Rob</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>12 March, 2020</span></td>
-                            <td><strong>Amazon Payment service</strong> <span>- Send</span></td>
-                            <td><strong>- £239.85</strong></td>
-                            <td><i class="ti-check cl-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Finished"></i></td>
-                            <td><strong class="cl-primary">GBP XXXX-5879</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>10 March, 2020</span></td>
-                            <td><strong>Namecheap Domain Buy</strong><span> - Cost</span></td>
-                            <td><strong>- $13.25</strong></td>
-                            <td><i class="ti-flag-alt cl-yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="Processing"></i></td>
-                            <td><strong class="cl-primary">USD XXXX-2359</strong></td>
-                          </tr>
-                          <tr data-toggle="modal" data-target="#exampleModalCenter">
-                            <td><span>10 March, 2020</span></td>
-                            <td><strong>Namecheap Domain Buy</strong><span> - Cost</span></td>
-                            <td><strong>- $13.25</strong></td>
-                            <td><i class="ti-flag-alt cl-yellow" data-toggle="tooltip" data-placement="top" title="" data-original-title="Processing"></i></td>
-                            <td><strong class="cl-primary">USD XXXX-2359</strong></td>
-                          </tr>
+                            @foreach ($transactions as $transaction)
+                            <tr data-toggle="modal" data-target="#exampleModalCenter">
+                              <td><span>{{$transaction->created_at}}</span></td>
+                              <td><strong>{{$transaction->description}}</strong></td>
+                              <td><strong> ${{$transaction->amount}}</strong></td>
+                              <td><i class="ti-check cl-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Finished"></i></td>
+                              <td><strong class="cl-primary">Card</strong></td>
+                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                     <div class="centered mt-30">

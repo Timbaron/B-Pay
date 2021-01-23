@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('Dashboard',[Dashboard::class,'index'])->name('dashboard');
+// Route::get('Dashboard',[Dashboard::class,'transaction'])->name('transaction');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
