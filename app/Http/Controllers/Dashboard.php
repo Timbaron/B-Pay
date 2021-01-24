@@ -18,7 +18,9 @@ class Dashboard extends Controller
         $transactions = Auth::user()->transactions()->paginate(12);
         return view('Dashboard',compact('user','transactions'));
     }
-    public function transaction()
+    public function profile()
     {
+        $user = Auth::user();
+        return view('profile',compact('user'));
     }
 }

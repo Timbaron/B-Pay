@@ -4,7 +4,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-20">
                 <div class="card">
                     <div class="card-header">
-                        <img src="assets/images/new-user/1.jpg" alt=""> Profile <a href="profile.html"><i class="ti-arrow-top-right"></i></a>
+                        <img src="assets/images/new-user/1.jpg" alt=""> Profile <a href="{{route('profile')}}"><i class="ti-arrow-top-right"></i></a>
                     </div>
                     <div class="card-body">
                         <p>Good Morning! <strong>{{$user->first_name. ' '. $user->last_name }}</strong></p>
@@ -18,7 +18,8 @@
                         Balance
                     </div>
                     <div class="card-body">
-                        <p>NGN : <strong>${{$user->balance}}</strong></p>
+                        <p>NG Naira : <strong>${{$user->balance}}</strong></p>
+                        <p>US Dollar : <strong>${{$user->balance/380}}</strong></p>
                     </div>
                 </div>
             </div>

@@ -49,7 +49,7 @@
                                 <input type="email" placeholder="Email" name="email" value="{{old('email')}}" required>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-sm-6">
-                                @error('phone')
+                                @error('phone_number')
                                     <span style="color: red"><i>Invalid phone Number</i></span>
                                 @enderror
                                 <input type="text" placeholder="Phone" name="phone_number" value="{{old('phone')}}" required>
