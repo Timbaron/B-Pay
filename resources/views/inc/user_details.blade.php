@@ -18,7 +18,7 @@
                         Balance
                     </div>
                     <div class="card-body">
-                        <p>NG Naira : <strong>${{$user->balance}}</strong></p>
+                        <p>NG Naira : <strong>₦{{$user->balance}}</strong></p>
                         <p>US Dollar : <strong>${{$user->balance/380}}</strong></p>
                     </div>
                 </div>

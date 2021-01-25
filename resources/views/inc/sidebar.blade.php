@@ -10,7 +10,7 @@
     </div>
     <div class="card mb-30">
         <div class="card-header">
-            Earn $25 to invite
+            Earn ₦25 to invite
         </div>
         <div class="card-body">
             <p>Boluptate quis optio, quibusdam quo unde cum dolores tempora veniam eius, voluptatum illum</p>
