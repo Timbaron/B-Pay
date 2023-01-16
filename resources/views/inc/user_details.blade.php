@@ -18,8 +18,8 @@
                         Balance
                     </div>
                     <div class="card-body">
-                        <p>NG Naira : <strong>₦{{$user->balance}}</strong></p>
-                        <p>US Dollar : <strong>${{$user->balance/380}}</strong></p>
+                        <p>NG Naira : <strong>₦{{number_format($user->balance)}}</strong></p>
+                        <p>US Dollar : <strong>${{number_format(floor($user->balance/730))}}</strong></p>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                         Bank account
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><i class="ti-check cl-primary"></i> Padlock Holdings Bank Corp.</li>
+                        <li class="list-group-item"><i class="ti-check cl-primary"></i> First Bank Nigeria</li>
                         <li class="list-group-item"><a href="#"><i class="ti-plus"></i> Add new Account</a></li>
                     </ul>
                 </div>

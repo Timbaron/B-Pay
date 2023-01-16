@@ -37,7 +37,7 @@ Primary Use:      Send Money, Pay Online Worldwide HTML Template
 25. Custom Banner
 
 -------------------------------------------*/
-/*** 
+/***
 
 ================
 	Fonts
@@ -47,6 +47,9 @@ Primary Use:      Send Money, Pay Online Worldwide HTML Template
 font-family: 'Jost', sans-serif;
 
  ***/
+ * {
+    scroll-behavior: smooth;
+ }
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&amp;display=swap");
 /*
   Flaticon icon font: Flaticon
@@ -264,7 +267,7 @@ font-family: 'Jost', sans-serif;
     content: "\f12f";
 }
 
-/*** 
+/***
 
 ===============
 	Reset Css
@@ -278,7 +281,7 @@ font-family: 'Jost', sans-serif;
     outline: none;
 }
 
-/*** 
+/***
 
 ===================
 	Global Settings
@@ -420,7 +423,7 @@ img {
     text-align: center;
 }
 
-/*** 
+/***
 
 ==================
     Color Classes
@@ -515,7 +518,7 @@ img {
     background: #F5214A;
 }
 
-/*** 
+/***
 
 ==================
     Section Styles
@@ -601,14 +604,14 @@ img {
     }
 }
 
-/*** 
+/***
 
 =======================
     Margin and Padding
 =======================
 
 ***/
-/* 
+/*
     Margin Top styles
 */
 .mar-0 {
@@ -639,7 +642,7 @@ img {
     margin-top: 60px;
 }
 
-/* 
+/*
     Margin Bottom Styles
 */
 .mb-10 {
@@ -666,7 +669,7 @@ img {
     margin-bottom: 60px;
 }
 
-/* 
+/*
     Margin Right Styles
 */
 .mr-10 {
@@ -693,7 +696,7 @@ img {
     margin-right: 60px;
 }
 
-/* 
+/*
     Padding Top Styles
 */
 .pad-0 {
@@ -724,7 +727,7 @@ img {
     padding-top: 60px;
 }
 
-/* 
+/*
     Padding Bottom Styles
 */
 .pb-10 {
@@ -751,7 +754,7 @@ img {
     padding-bottom: 60px;
 }
 
-/*** 
+/***
 
 ============================
     Background and Overlay
@@ -925,7 +928,7 @@ img {
     }
 }
 
-/*** 
+/***
 
 ===================
     Buttons Style
@@ -1134,10 +1137,10 @@ img {
     }
 }
 
-/* 
+/*
 ==============================
-    ScrollUp Button 
-============================== 
+    ScrollUp Button
+==============================
 */
 a#scrollUp {
     background: #28df99;

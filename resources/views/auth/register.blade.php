@@ -63,6 +63,12 @@
                             <div class="col-xl-6 col-lg-6 col-sm-6">
                                 <input type="password" placeholder="Re-Password" name="password_confirmation" required autocomplete="new-password">
                             </div>
+                            <div class="col-xl-6 col-lg-6 col-sm-6">
+                                @error('phone_number')
+                                    <span style="color: red"><i>Invalid Referel ID</i></span>
+                                @enderror
+                                <input type="text" placeholder="referal_id" name="referal_id" value="{{old('referal_id') ?? $affiliateId ?? '' }}" readonly required>
+                            </div>
                             <div class="col-xl-12 col-lg-12 col-sm-12">
                                 <button type="submit" class="bttn-mid btn-fill w-100">Register now</button>
                             </div>

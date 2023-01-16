@@ -19,6 +19,13 @@ Route::get('/', function () {
 });
 Route::get('Dashboard',[Dashboard::class,'index'])->name('dashboard');
 Route::get('profile',[Dashboard::class,'profile'])->name('profile');
-Auth::routes();
+Auth::routes(['register' => false]);
+
+// register route
+Route::get('register/{affiliate_id?}', [App\Http\Controllers\Auth\RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/find/account', [Dashboard::class, 'findAccount'])->name('find.account');
+Route::post('transfer.initiate', [Dashboard::class, 'transferInitiate'])->name('transfer.initiate');

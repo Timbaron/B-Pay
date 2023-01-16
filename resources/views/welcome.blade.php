@@ -10,24 +10,8 @@
                         <h4>B-Pay is an insane</h4>
                         <h1><i>Number one online payment platform</i></h1>
                         <div class="hero-btn">
-                            <a href="contact.html" class="bttn-mid btn-fill mr-10">Learn more</a>
-                            <a href="how-it-works.html" class="bttn-mid btn-blu">How it works?</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="single-slide gradient-overlay" style="background: url('assets/images/banner/4.jpg') no-repeat center center;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 centered">
-                    <div class="hero-content">
-                        <h4>#1 number online money transfering system</h4>
-                        <h1>Make online payment for free from anywhere</h1>
-                        <div class="hero-btn">
-                            <a href="send-money.html" class="bttn-mid btn-fill mr-10">Pay now</a>
-                            <a href="dashboard.html" class="bttn-mid btn-blu">Dashboard</a>
+                            <a href="/Dashboard" class="bttn-mid btn-fill mr-10">Get Started</a>
+                            <a href="#howitworks" class="bttn-mid btn-blu">How it works?</a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +71,7 @@
     </div>
 </section><!--/Payment Category-->
 <!--How It works-->
-<section class="steps-area section-padding-2 blue-bg">
+<section class="steps-area section-padding-2 blue-bg" id="howitworks">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-6 centered">
@@ -103,7 +87,7 @@
                     <div class="step-number">1</div>
                     <i class="flaticon-007-user"></i>
                     <h4>Signin account</h4>
-                    <p>Nobis, quasi porro eligendi eos inventore dignissimos, velit necessitatibus quaerat</p>
+                    <p>Sign up with 1000 Naira and receive a bonus of 200 Naira if you were not refered or a bonus of 100 Naira if you were refered</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -111,7 +95,7 @@
                     <div class="step-number">2</div>
                     <i class="flaticon-009-percentage"></i>
                     <h4>Get bonus</h4>
-                    <p>Nobis, quasi porro eligendi eos inventore dignissimos, velit necessitatibus quaerat</p>
+                    <p>Get a whopping sum of 400 Naira when you refer a friend</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -119,7 +103,7 @@
                     <div class="step-number">3</div>
                     <i class="flaticon-034-bank"></i>
                     <h4>Start Transaction</h4>
-                    <p>Nobis, quasi porro eligendi eos inventore dignissimos, velit necessitatibus quaerat</p>
+                    <p>You can transfer you money to friends and family</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -127,7 +111,7 @@
                     <div class="step-number">4</div>
                     <i class="flaticon-038-agreement"></i>
                     <h4>Happy Earnings</h4>
-                    <p>Nobis, quasi porro eligendi eos inventore dignissimos, velit necessitatibus quaerat</p>
+                    <p>You can withdraw anytime and get you money within minutes</p>
                 </div>
             </div>
         </div>

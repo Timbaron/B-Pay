@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTransactionsTable extends Migration
+class CreateReferalHistoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateTransactionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('transactions', function (Blueprint $table) {
-            $table->id('id');
-            $table->integer('user_id');
-            $table->string('type');
-            $table->decimal('amount', 8, 2);
-            $table->text('description');
-            $table->boolean('status');
+        Schema::create('referal_histories', function (Blueprint $table) {
+            $table->id();
+            $table->integer('referal_id');
+            $table->integer('referred_id');
+            $table->boolean('is_verified');
+            $table->string('status');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateTransactionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transactions');
+        Schema::dropIfExists('referal_histories');
     }
 }

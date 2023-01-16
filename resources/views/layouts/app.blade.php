@@ -31,7 +31,7 @@
             <nav class="navbar navbar-expand-lg main-menu">
                 <div class="container-fluid">
 
-                    <a class="navbar-brand" href="index-2.html"><img src="images/logo-2.png" class="d-inline-block align-top" alt=""></a>
+                    <a class="navbar-brand" href="/"><img src="images/logo-2.png" class="d-inline-block align-top" alt=""></a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="menu-toggle"></span>
@@ -40,7 +40,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="how-it-works.html">How it works</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#howitworks">How it works</a></li>
                             {{-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                                 <ul class="dropdown-menu">
@@ -63,9 +63,9 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="{{route('dashboard')}}">Dashboard</a></li>
-                                    <li><a class="dropdown-item" href="transactions.html">Transactions</a></li>
+                                    {{-- <li><a class="dropdown-item" href="transactions.html">Transactions</a></li>
                                     <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                    {{-- <li><a class="dropdown-item" href="notification.html">Notifications</a></li>
+                                    <li><a class="dropdown-item" href="notification.html">Notifications</a></li>
                                     <li><a class="dropdown-item" href="send-money.html">Send Money</a></li>
                                     <li><a class="dropdown-item" href="send-money-success.html">Send Money Success</a></li>
                                     <li><a class="dropdown-item" href="deposit-money.html">Deposit Money</a></li>
