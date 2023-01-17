@@ -6,6 +6,7 @@ use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class Dashboard extends Controller
 {
@@ -43,6 +44,16 @@ class Dashboard extends Controller
     }
 
     public function transferInitiate(){
+        $this->validate(request(),[
+            'from-account' => 'required',
+            'acct_number' => 'required',
+            'amount' => 'required',
+            'password' => 'required'
+        ]);
+        if(!Hash::check(request()->password, auth()->user()->password)){
+            notify()->error('Password does not match', 'Error');
+            return redirect()->route('dashboard');
+        }
         $user = User::whereId(auth()->user()->id)->first();;
         $receiver = User::where('acct_number', request()->acct_number)->firstOrFail();
         $amount = request()->amount;
@@ -81,10 +92,12 @@ class Dashboard extends Controller
             $Receivertransaction = Transaction::create($ReceivertransactionData);
         }
         if($Usertransaction && $Receivertransaction){
-            return redirect()->route('dashboard')->with('success','Transfer Initiated');
+            notify()->success('Transfer Initiated and Completed ⚡️', 'Success');
+            return redirect()->route('dashboard');
         }
         else{
-            return redirect()->route('dashboard')->with('error','Transfer Failed');
+            notify()->error('Transfer Failed', 'Error');
+            return redirect()->route('dashboard');
         }
 
     }
