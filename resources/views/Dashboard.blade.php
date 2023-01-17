@@ -19,6 +19,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if($user->is_active)
                             @foreach ($transactions as $transaction)
                             <tr data-toggle="modal" data-target="#exampleModalCenter-{{$transaction->id}}">
                                 <td><span>{{$transaction->created_at}}</span></td>
@@ -104,10 +105,19 @@
                                 </div><!-- /Transaction Details Modal -->
                             </div>
                             @endforeach
+                            @else
+                            <tr>
+                                <td colspan="6" class="text-center">
+                                    <div class="centered mt-30">
+                                        <a href="/activate/account" class="bttn-mid btn-fill">Activate Account</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            @endif
                         </tbody>
                     </table>
                     <div class="centered mt-30">
-                        <a href="transactions.html" class="bttn-mid btn-fill">All Transactions</a>
+                        <a href="#" class="bttn-mid btn-fill">All Transactions</a>
                     </div>
 
                 </div>

@@ -4,8 +4,12 @@
             Someone to pay?
         </div>
         <div class="card-body">
-            <p>You can Send money to a friend and money is received immediately.</p>
+            <p>You can Send money to a friend and money is received immediately.</p><br>
+            @if($user->is_active)
             <a href="#" data-toggle="modal" data-target="#makeTransferCenter" class="bttn-small btn-fill"><i class="ti-user"></i> Make a payment</a>
+            @else
+            <a href="/activate/account" class="bttn-small btn-fill"><i class="ti-lock"></i> Activate Account</a>
+            @endif
         </div>
     </div>
     <div class="card mb-30">
@@ -13,8 +17,12 @@
             Earn ₦400 to invite
         </div>
         <div class="card-body">
-            <p>Copy the link below to invite a friend and earn a total of ₦400</p>
+            <p>Copy the link below to invite a friend and earn a total of ₦400</p> <br>
+            @if($user->is_active)
             <a href="#" onclick="CopyCode()" class="bttn-small btn-fill"><i class="ti-arrow-down"></i>Click to copy link</a>
+            @else
+            <a href="/activate/account" class="bttn-small btn-fill"><i class="ti-lock"></i> Activate Account</a>
+            @endif
         </div>
     </div>
     <div class="card">
@@ -22,8 +30,12 @@
             Receive a payment?
         </div>
         <div class="card-body">
-            <p>Click the button below to copy your account number. Send account number to a fellow B-Pay user</p>
-            <a href="#" onclick="CopyAccount()" class="bttn-small btn-fill"><i class="ti-arrow-down"></i>Copy Acc Number</a>
+            <p>Click the button below to copy your account number. Send account number to a fellow B-Pay user</p><br>
+            @if($user->is_active)
+            <a href="#" onclick="CopyAccount()" class="bttn-small btn-fill"><i class="ti-arrow-up"></i>Copy Acc Number</a>
+            @else
+            <a href="/activate/account" class="bttn-small btn-fill"><i class="ti-lock"></i> Activate Account</a>
+            @endif
         </div>
     </div>
 </div>

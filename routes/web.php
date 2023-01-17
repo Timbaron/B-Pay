@@ -29,3 +29,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/find/account', [Dashboard::class, 'findAccount'])->name('find.account');
 Route::post('transfer.initiate', [Dashboard::class, 'transferInitiate'])->name('transfer.initiate');
+
+Route::get('activate/account/', [Dashboard::class, 'ActivateAccount'])->name('account.activate');
+Route::get('/rave/callback', [Dashboard::class, 'callback'])->name('callback');
