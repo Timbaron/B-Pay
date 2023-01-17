@@ -32,3 +32,4 @@ Route::post('transfer.initiate', [Dashboard::class, 'transferInitiate'])->name('
 
 Route::get('activate/account/', [Dashboard::class, 'ActivateAccount'])->name('account.activate');
 Route::get('/rave/callback', [Dashboard::class, 'callback'])->name('callback');
+Route::post('/withdraw', [Dashboard::class, 'withdraw'])->name('withdraw');
